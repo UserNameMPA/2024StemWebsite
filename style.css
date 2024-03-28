@@ -1,4 +1,92 @@
 
+  /* Navigation bar styles */
+  nav {
+    background-color: #333; /* Dark background color */
+    color: #fff; /* Text color */
+    padding: 10px 20px; /* Padding for content */
+    display: flex;
+    justify-content: space-between; /* Align items */
+    align-items: center;
+    border-radius: 10px;
+  }
+  nav img {
+    height: 60px; /* size for logo image */
+    border-radius: 60px;
+    
+  }
+  nav ul {
+    list-style-type: none; /* Remove bullet points */
+    display: flex;
+  }
+  nav ul li {
+    margin-left: 20px; /* Space between buttons */
+  }
+  nav ul li a {
+    color: #fff; /* Text color for links */
+    text-decoration: none; /*To get rid of the unline on buttons*/
+    padding: 8px 15px; 
+    border-radius: 5px; 
+    background-color: #555; 
+    transition: background-color 0.3s ease; 
+  }
+  nav ul li a:hover {
+    background-color: #777; /* Darker color on hover */
+  }
+  .hero {
+    background-image: url('https://wallpapercave.com/wp/wp2157765.jpg'); /* Replace 'background-image.jpg' with your image */
+    background-size: cover;
+    background-position: center;
+/*    background-color: #1a1a1a;*/
+
+    
+    color: #ffffff;
+    padding: 100px 20px;
+    text-align: center;
+  }
+  .hero img{
+    opacity: 30;
+    height: 250px; 
+  }
+  .hero h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  .hero p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+  }
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #772ebb;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: #7129b5 0.3s ease;
+  }
+  .btn:hover {
+    background-color: #bf7bff;
+  }
+/*Why Rave? about section */  
+.about {
+    padding: 100px 20px;
+    text-align: center;
+    
+}
+.about p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+.about h1 {
+    margin-bottom: 30px;
+}
+.about ul {
+    list-style-type: none; /* Remove bullet points */
+    display: flex;
+  }
+/* comparision chart styles*/
 #top {
     display: block;
     width: 100%;
@@ -12,3 +100,55 @@
 .center {
     text-align: center;
   }
+  
+
+  body {
+    font-family: Arial, sans-serif;
+    /*background-color: #f7f7f7;*/
+    /*background-color: #fff;*/
+    padding: 20px;
+    background: linear-gradient(178.1deg, rgb(0, 0, 0) 8.5%, rgb(50, 34, 93) 292.4%);
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    
+  }
+  th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+    
+  }
+  tr:nth-child(even) {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  footer {
+    margin-top: 100px;
+    text-align: center;
+  }
+
+
+  /*testing  */
+  
