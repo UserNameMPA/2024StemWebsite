@@ -5,23 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Rave</title>
+   
     
+    
+    
+<!-- https://www.w3schools.com/howto/howto_css_smooth_scroll.asp-->
     
 </head>
 <body>
     <!--Navagation Page-->
-    <script src="script.js"></script>
-    <nav>
+    
+    <nav class = 'nav'>
         <img src="./img/logos/Rave.png" alt="Logo"> <!-- Placeholder image -->
         <ul>
           <li><a href="#">Sign In</a></li>
           <li><a href="#">Contact Us</a></li>
           <li><a href="#">Search</a></li> 
+          <li><a href="#">Pricing</a></li> 
           <!-- Add more buttons -->
         </ul>
       </nav>
 
-      
+      <div class = 'parallax' id = 'parallaxBG'>
       <div class="hero">
         <img src="./img/logos/Rave_transparent.png" alt="Logo">
         <h1>Discover, Stream, and Share Your Favorite Music</h1>
@@ -29,9 +34,11 @@
         <p>1 month free, then $9.99/month</p>
         <a href="#" class="btn">Get Started for Free</a>
       </div>
+      </div>
 
       
-      <div class = "about">
+      
+      <div class = "about" >
         <h1>Why Rave?</h1>
         <p>Rave Music is a leading-edge music streaming platform dedicated to revolutionizing the way people discover, enjoy, and share music. Founded on the belief that music is a universal language that transcends borders and connects people, Rave is committed to providing a dynamic and immersive music experience for users worldwide.</p>
         <p>Our platform boasts an extensive library of tracks spanning every genre imaginable, from chart-topping hits to underground gems, ensuring there's something for every music lover. With powerful AI-driven algorithms, personalized recommendations, and seamless cross-device integration, Rave empowers users to curate their perfect playlists, discover new sounds, and connect with like-minded souls from around the globe.</p>
@@ -42,10 +49,10 @@
     
 
         <h1>Music Streaming Service Comparison</h1>
-        <div class="container">
+        <div class="container" id = "test">
             <table>
                 <tr>
-                 <!--add this to style later and make the rest of corners rounded lmao-->
+                 <!--add this to style later and make the rest of corners rounded-->
                   <th style = "border-radius:15px 0px 0px 0px;">Feature</th>
                   <th>Rave Music</th>
                   <th>Spotify</th>
@@ -65,11 +72,12 @@
               </table>
     </div>
         
-    <footer>
+    <footer class='footer'>
         <p>Contact Us</p>
         <p>Support</p>
          <p>Privacy policy</p>
     </footer>
+    
 </body>
 </html>
 
