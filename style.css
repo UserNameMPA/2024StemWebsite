@@ -34,6 +34,18 @@
   nav ul li a:hover {
     background-color: #777; /* Darker color on hover */
   }
+  .logo{
+  background-attachment: fixed; /* Replace 'background-image.jpg' with your image */
+    background-size: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+
+
+    
+    color: #ffffff;
+    padding: 100px 20px;
+    text-align: center;
+}
   .hero {
     /*background-image: url('https://wallpapercave.com/wp/wp2157765.jpg');*/
     background-attachment: fixed; /* Replace 'background-image.jpg' with your image */
@@ -53,7 +65,7 @@ background-repeat: no-repeat;
   .hero img{
     
     opacity: 30;
-    height: 250px; 
+    height: 200px; 
   }
   .hero h1 {
     font-size: 36px;
@@ -161,10 +173,16 @@ background-repeat: no-repeat;
 
   /*testing  */
   #parallaxBG{
+    background-image: url('./img/herobackground.png');
     background-size: cover;
-    background-image: './img/herobackground.png';
     background-repeat: no-repeat;
     background-attachment: fixed;
+  }
+  #parallaxBG2{
+    background-image: url('./img/paralax effect.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
     
   }
 
