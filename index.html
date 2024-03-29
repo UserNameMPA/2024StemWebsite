@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="./img/logos/RaveFal2.png" sizes="16x16">
     <title>Rave</title>
    
     
@@ -15,10 +16,11 @@
 <body>
     <!--Navagation Page-->
     
-    <nav class = 'nav'>
+    <nav class = 'nav' id = 'nav'>
         <img src="./img/logos/Rave.png" alt="Logo"> <!-- Placeholder image -->
         <ul>
           <li><a href="#">Sign In</a></li>
+          <li><a href="#about">About</a></li> 
           <li><a href="#">Contact Us</a></li>
           <li><a href="#">Search</a></li> 
           <li><a href="#">Pricing</a></li> 
@@ -27,12 +29,12 @@
       </nav>
 
       <div class = 'parallax' id = 'parallaxBG'>
-      <div class="logo">
-        <img src="./img/logos/Rave_transparent.png" alt="Logo">
+      <div class="logo" id = 'logo'>
+        <img src="./img/logos/Rave_transparent_cropped.png" alt="Logo" id = 'logoImg'>
       </div>
       <div class = 'parallax__layer' id = 'parallaxBG2'></div>
     </div>
-      <div class="hero">
+      <div class="hero" id = "hero">
         <h1>Discover, Stream, and Share Your Favorite Music</h1>
         <p>Use Rave's AI to automatically create playlists according to your taste.</p>
         <p>1 month free, then $9.99/month</p>
@@ -43,7 +45,7 @@
 
       
       
-      <div class = "about" >
+      <div class = "about" id = "about">
         <h1>Why Rave?</h1>
         <p>Rave Music is a leading-edge music streaming platform dedicated to revolutionizing the way people discover, enjoy, and share music. Founded on the belief that music is a universal language that transcends borders and connects people, Rave is committed to providing a dynamic and immersive music experience for users worldwide.</p>
         <p>Our platform boasts an extensive library of tracks spanning every genre imaginable, from chart-topping hits to underground gems, ensuring there's something for every music lover. With powerful AI-driven algorithms, personalized recommendations, and seamless cross-device integration, Rave empowers users to curate their perfect playlists, discover new sounds, and connect with like-minded souls from around the globe.</p>
@@ -58,10 +60,10 @@
             <table>
                 <tr>
                  <!--add this to style later and make the rest of corners rounded-->
-                  <th style = "border-radius:15px 0px 0px 0px;">Feature</th>
+                  <th style = "border-radius:15px 0px 0px 0px;">Features</th>
                   <th>Rave Music</th>
                   <th>Spotify</th>
-                  <th>Apple Music</th>
+                  <th style = "border-radius:0px 15px 0px 0px;">Apple Music</th>
                 </tr>
                 <tr>
                   <td>Music Library</td>
@@ -71,12 +73,72 @@
                 </tr>
                 <tr>
                     <td>Personalized Recommendations</td>
-
-                </tr>
+                    <td>AI-driven recommendations tailored to user preferences</td>
+                    <td>Personalized playlists and recommendations based on listening history</td>
+                    <td>Curated playlists and recommendations based on user preferences</td>
+                  </tr>
+                  <tr>
+                    <td>Social Sharing</td>
+                    <td>Connect with friends, share playlists, and discover music together</td>
+                    <td>Share playlists, tracks, and artists with friends</td>
+                    <td>Share playlists, tracks, and albums with friends</td>
+                  </tr>
+                  <tr>
+                    <td style = "border-radius:15px 0px 0px 0px;">Platform Compatibility</td>
+                    <td>Available on web, iOS, Android, and more</td>
+                    <td>Available on web, iOS, Android, desktop, and more</td>
+                    <td>Available on iOS, Android, macOS, Windows, and more</td>
+                  </tr>
                 <!-- add other rows here -->
               </table>
     </div>
-        
+<!-- add payment section-->
+    <h1>Payment plans</h1>
+    <div>
+    </div>
+
+    <script>
+     window.onscroll = function() {logoscale(), stickynav()};
+
+  function logoscale() {
+    let womp = 100 - (document.scrollingElement.scrollTop/4);
+    let womp2 = 30 + (document.scrollingElement.scrollTop/10);
+   
+    console.log(document.scrollingElement.scrollTop);
+    document.getElementById("logo").style.scale = `${womp}%`;
+    if (document.scrollingElement.scrollTop < 900 && document.getElementById("hero").style.scale < 100) {
+      document.getElementById("hero").style.scale = `${womp2}%`;
+    }
+    else {
+      document.getElementById("hero").style.scale = "100%";
+    }
+   
+    
+  /*if (document.scrollingElement.scrollTop < 100) {
+    document.getElementById("logo").style.scale = "100%";
+  } else {
+    document.getElementById("logo").style.scale = `${womp}%`;
+  }
+}
+*/
+  }</script>
+  <script> 
+  // When the user scrolls the page, execute myFunction
+// Get the navbar
+var navbar = document.getElementById("nav");
+// Get the offset position of the navbar
+var sticky = navbar.offsetTop;
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function stickynav() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+
+    
+</script>
     <footer class='footer'>
         <p>Contact Us</p>
         <p>Support</p>
