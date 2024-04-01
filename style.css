@@ -1,3 +1,10 @@
+/*to overide stupid red text*/
+a:-webkit-any-link {
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+}
+
 
 .column {
   float: left;
@@ -176,7 +183,7 @@ background-repeat: no-repeat;
   .container {
     max-width: 800px;
     margin: 0 auto;
-    background-color: #2929291e;
+    background-color: #292929c2;
     color: #ffffff;
     border-radius: 10px;
     padding: 20px;

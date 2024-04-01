@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="./img/logos/RaveFal2.png" sizes="16x16">
+    <title>Rave</title>
+   
+    
+    
+    
+<!-- https://www.w3schools.com/howto/howto_css_smooth_scroll.asp-->
+    
+</head>
+<body>
+    <!--Navagation Page-->
+    
+    <nav class = 'nav' id = 'nav'>
+        <a href="index.html">
+            <img src="./img/logos/Rave.png" alt="Logo">
+            </a> <!-- Placeholder image -->
+        <ul>
+          <li><a href="#">Sign In</a></li>
+          <li><a href="index.html#about">About</a></li> 
+          <li><a href="leadership.html#leaders">Our Leaders</a></li>
+          <li><a href="#">Search</a></li> 
+          <li><a href="#payment-options">Pricing</a></li> 
+          <!-- Add more buttons -->
+        </ul>
+      </nav>
+
+      <div class = 'parallax' id = 'parallaxBG'>
+      <div class="logo" id = 'logo'>
+        <img src="./img/logos/Rave_transparent_cropped.png" alt="Logo" id = 'logoImg'>
+      </div>
+      <div class = 'parallax__layer' id = 'parallaxBG2'></div>
+    </div>
+      <div class="hero" id = "hero">
+        <h1>Discover, Stream, and Share Your Favorite Music</h1>
+        <p>Use Rave's AI to automatically create playlists according to your taste.</p>
+        <p>1 month free, then $9.99/month</p>
+        <a href="#" class="btn">Get Started for Free</a>
+      </div>
+      
+      
+
+      
+      <style>
+        
+        .payment-options {
+          display: flex;
+          justify-content: space-between; /* Distribute items evenly across the container */
+          max-width: 800px; /* Adjust as needed */
+          margin: 0 auto; /* Center the container horizontally */
+        }
+        .payment-option {
+            
+          flex-basis: 30%; /* Each column takes up 30% of the container */
+          padding: 20px;
+          border: 1px solid #ccc;
+          border-radius: 8px;
+          box-sizing: border-box;
+          
+        }
+        .payment-option img {
+          max-width: 100%;
+          height: auto;
+          margin-bottom: 10px;
+        }
+        
+        
+        
+  
+        
+      </style>
+
+      
+    <h1>Payment plans</h1>
+    <div class>
+        <!-- 3 rows of payment plans basic, premium, and family--> 
+        <div class="payment-options" id = "payment-options">
+            <div class="payment-option">
+              <img src="payment_option1.jpg" alt="Payment Option 1">
+              <h2>Basic</h2>
+              <p>Features:
+                <ul>
+                    <li>Access to a large library of songs, albums, and playlists.</li>
+                    <li>Personalized based on listening history and preferences.</li>
+                    <li>Create and share playlists with friends.</li>
+                </ul></p>
+                <div><a href="#" class = "btn"  style = "a;">Free with ads.</a></div>
+            </div>
+            <div class="payment-option">
+              <img src="payment_option2.jpg" alt="Payment Option 2">
+              <h2>Premium</h2>
+              <p>Features:
+                <ul>
+
+
+                    <li>Ad-free listening experience</li>
+                    <li>Higher quality audio streaming.</li>
+                    <li>Offline mode for downloaded songs.</li>
+                    <li>Access to AI powered playlists.</li>
+                    <li>Tune in on musical concerts from around the globe. </li>
+
+
+
+                </ul>
+              </p>
+              <div><a href="#" class = "btn" style = "">$9.99/month</a></div>
+            </div>
+            <div class="payment-option">
+              <img src="payment_option3.jpg" alt="Payment Option 3">
+              <h3>Family Plan</h3>
+              <p>Features:
+                <ul>
+                    <li>All features of the Premium Plan for up to six family members.</li>
+                </ul>
+              </p>
+              <div><a href="#" class = "btn" id = 'pay'>$14.99/month</a></div>
+            </div>
+          </div>
+          
+        
+
+
+
+
+
+
+    </div>
+
+    <script>
+     window.onscroll = function() {logoscale(), stickynav()};
+
+  function logoscale() {
+    let womp = 100 - (document.scrollingElement.scrollTop/4);
+    let womp2 = 30 + (document.scrollingElement.scrollTop/10);
+   
+    console.log(document.scrollingElement.scrollTop);
+    document.getElementById("logo").style.scale = `${womp}%`;
+    if (document.scrollingElement.scrollTop < 900 && document.getElementById("hero").style.scale < 100) {
+      document.getElementById("hero").style.scale = `${womp2}%`;
+    }
+    else {
+      document.getElementById("hero").style.scale = "100%";
+    }
+   
+    
+  /*if (document.scrollingElement.scrollTop < 100) {
+    document.getElementById("logo").style.scale = "100%";
+  } else {
+    document.getElementById("logo").style.scale = `${womp}%`;
+  }
+}
+*/
+  }</script>
+  <script> 
+  // When the user scrolls the page, execute myFunction
+// Get the navbar
+var navbar = document.getElementById("nav");
+// Get the offset position of the navbar
+var sticky = navbar.offsetTop;
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function stickynav() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+
+    
+</script>
+    <footer class='footer'>
+        <p>Contact Us</p>
+        <p>Support</p>
+         <p>Privacy policy</p>
+    </footer>
+    
+</body>
+</html>
+
+
+
