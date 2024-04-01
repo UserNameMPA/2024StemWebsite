@@ -19,6 +19,28 @@ a:-webkit-any-link {
   clear: both;
 }
 
+
+.payment-options {
+  display: flex;
+  justify-content: space-between; /* Distribute items evenly across the container */
+  max-width: 800px; /* Adjust as needed */
+  margin: 0 auto; /* Center the container horizontally */
+}
+.payment-option {
+    
+  flex-basis: 30%; /* Each column takes up 30% of the container */
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+  
+}
+.payment-option img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
 /* Navigation bar styles */
   nav {
     
