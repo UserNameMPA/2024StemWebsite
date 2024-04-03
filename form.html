@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="./img/logos/RaveFal2.png" sizes="16x16">
+    <title>Rave</title>
+   
+    
+    
+    
+<!-- https://www.w3schools.com/howto/howto_css_smooth_scroll.asp-->
+    
+</head>
+<body>
+    <!--Navagation Page-->
+    
+    <nav class = 'nav' id = 'nav'>
+        <a href="index.html">
+            <img src="./img/logos/Rave.png" alt="Logo">
+        </a>  <!-- Placeholder image -->
+        <ul>
+            <li><a href="#">Sign In</a></li>
+            <li><a href="index.html#about">About</a></li>  
+            <li><a href="leadership.html#leaders">Our Leaders</a></li>
+            <li><a href="#">Search</a></li> 
+            <li><a href="products.html#payment-options">Pricing</a></li> 
+            <!-- Add more buttons -->
+          </ul>
+      </nav>
+
+      <div class = 'parallax' id = 'parallaxBG'>
+      <div class="logo" id = 'logo'>
+        <img src="./img/logos/Rave_transparent_cropped.png" alt="Logo" id = 'logoImg'>
+      </div>
+      <div class = 'parallax__layer' id = 'parallaxBG2'></div>
+    </div>
+      <div class="hero" id = "hero"></div>
+      <h1></h1>
+
+      
+      
+
+      
+    
+        
+      
+
+
+
+
+
+
+  
+
+    <script>
+     window.onscroll = function() {logoscale(), stickynav()};
+
+  function logoscale() {
+    let womp = 100 - (document.scrollingElement.scrollTop/4);
+    let womp2 = 30 + (document.scrollingElement.scrollTop/10);
+   
+    console.log(document.scrollingElement.scrollTop);
+    document.getElementById("logo").style.scale = `${womp}%`;
+    if (document.scrollingElement.scrollTop < 900 && document.getElementById("hero").style.scale < 100) {
+      document.getElementById("hero").style.scale = `${womp2}%`;
+    }
+    else {
+      document.getElementById("hero").style.scale = "100%";
+    }
+   
+    
+  /*if (document.scrollingElement.scrollTop < 100) {
+    document.getElementById("logo").style.scale = "100%";
+  } else {
+    document.getElementById("logo").style.scale = `${womp}%`;
+  }
+}
+*/
+  }</script>
+  <script> 
+  // When the user scrolls the page, execute myFunction
+// Get the navbar
+var navbar = document.getElementById("nav");
+// Get the offset position of the navbar
+var sticky = navbar.offsetTop;
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function stickynav() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+
+    
+</script>
+    <footer class='footer'>
+        <p>Contact Us</p>
+        <p><a href="form.html#ticket">Support</p>
+        <p><a href="Privacy policy.html#document">Privacy policy</a></p>
+    </footer>
+    
+</body>
+</html>
+
+
+
