@@ -243,6 +243,7 @@ background-repeat: no-repeat;
     text-align: center;
     /*-webkit-text-stroke: 1px rgb(95, 12, 184);*/
     color: #ffffff;
+    text-decoration: underline;
   }
 
 
