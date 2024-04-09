@@ -37,12 +37,88 @@
       <div class = 'parallax__layer' id = 'parallaxBG2'></div>
     </div>
       <div class="hero" id = "hero"></div>
-      <h1 id = 'ticket'>Support</h1>
+      <h1 id = 'ticket'>Rave Support</h1>
+
+      <!--make a dropdown menu with options for issues, payment, account, plan something like this  https://support.spotify.com/us/    -->
+      <!-- example https://www.w3schools.com/howto/howto_js_dropdown.asp  -->
+      <h2>How can we help you?</h2>
+
+      <p></p>
+
 
 
 
 
       <h1 id = 'contact'>Contact Us</h1>
+      <!--Create something like this https://about.gitlab.com/sales/ -->
+      <!--very helpful contact us form example from https://www.w3schools.com/howto/howto_css_contact_form.asp  -->
+      
+      <h2></h2>
+
+
+      <style>
+        /* Style inputs with type="text", select elements and textareas */
+          input[type=text], select, textarea {
+            width: 100%; /* Full width */
+            padding: 12px; /* Some padding */ 
+            border: 1px solid #ccc; /* Gray border */
+            border-radius: 4px; /* Rounded borders */
+            box-sizing: border-box; /* Make sure that padding and width stays in place */
+            margin-top: 6px; /* Add a top margin */
+            margin-bottom: 16px; /* Bottom margin */
+            resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+          }
+
+          /* Style the submit button with a specific background color etc */
+          input[type=submit] {
+            background-color: #772ebb;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+          }
+
+          /* When moving the mouse over the submit button, add a darker green color */
+          input[type=submit]:hover {
+            background-color: #a552f2;
+          }
+
+          /* Add a background color and some padding around the form */
+          .formcon {
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;
+          }
+      </style>
+      <div class="formcon">
+        <!--should get rid of action_page.php since this website is just an example product, or make a fake form complete page-->
+        <form action="action_page.php">
+      
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+          
+          <label for="email">Email</label>
+          <!-- couldnt think of a good placeholder https://ux.stackexchange.com/questions/50579/which-label-text-is-good-for-enter-email-address -->
+          <input type="text" id="email" name="email" placeholder="someone@example.com">
+      
+          <label for="country">Country</label>
+          <select id="country" name="country">
+            <option value="australia">Australia</option>
+            <option value="canada">Canada</option>
+            <option value="usa">USA</option>
+          </select>
+      
+          <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      
+          <input class="submit" type="submit" value="Submit">
+      
+        </form>
+      </div>
 
       
 
