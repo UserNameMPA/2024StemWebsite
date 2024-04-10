@@ -43,7 +43,18 @@
       <!-- example https://www.w3schools.com/howto/howto_js_dropdown.asp  -->
       <h2>How can we help you?</h2>
 
-      <p></p>
+      <p>If you're experiencing an issue that requires our attention, please submit a support ticket. Provide as much detail as possible so that we can assist you efficiently.</p>
+        <!-- Search Bar -->
+    <input type="text" class="input-bar" placeholder="Describe your issue">
+    
+    <!-- Buttons -->
+    <div class = 'btn2 btn' role="list">
+    <a href="#" class="btn2">Payment Help</a>
+    <a href="#" class="btn2">Account Help</a>
+    <a href="#" class="btn2">Plan Help</a>
+    <a href="#" class="btn2">App Help</a>
+    <a href="#" class="btn2">Device Help</a>
+    </div>
 
 
 
@@ -53,10 +64,23 @@
       <!--Create something like this https://about.gitlab.com/sales/ -->
       <!--very helpful contact us form example from https://www.w3schools.com/howto/howto_css_contact_form.asp  -->
       
-      <h2></h2>
 
 
       <style>
+
+        .btn2{
+          grid-template-columns: repeat(3, minmax(0px, 1fr));
+          adding-top: 16px;
+    display: grid;
+    grid-auto-rows: 1fr;
+    grid-template-columns: repeat(2, minmax(0px, 1fr));
+    gap: 16px;
+    margin-bottom: 56px;
+    grid-template-columns: repeat(3, minmax(0px, 1fr));
+
+
+}
+            
         /* Style inputs with type="text", select elements and textareas */
           input[type=text], select, textarea {
             width: 100%; /* Full width */
