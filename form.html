@@ -14,7 +14,91 @@
     
 </head>
 <body>
+  <style>/* Style for the popup */
+    .popup {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #fff;
+        padding: 20px;
+        border: 2px solid #333;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        z-index: 9999;
+    }
+    
+    /* Style for the close button */
+    .close {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+    }
+    
+    /* Style for the Kofi button */
+    #kofi-button {
+        position: fixed;
+        bottom: 20px; /* Adjust this value as needed */
+        right: 20px;
+        z-index: 9999;
+        cursor: pointer;
+    }
+    </style>
+    </head>
+    <body>
+    
+    <!-- Kofi widget button -->
+    <div id="kofi-button">
+      <a href='https://ko-fi.com/E1E0WRAJ5' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://storage.ko-fi.com/cdn/kofi2.png?v=3' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
+    </div>
+    
+    <!-- Popup for preloaded video -->
+    <div id="video-popup" class="popup">
+        <span style="color: black;" class="close" onclick="closePopup()">&times;</span>
+        <video id="video-frame" width="560" height="315" controls>
+            <source src="https://shattereddisk.github.io/rickroll/rickroll.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <p style="color: #333;">real button: </p>
+        <a href='https://ko-fi.com/E1E0WRAJ5' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://storage.ko-fi.com/cdn/kofi2.png?v=3' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
+    </div>
+    
+    <script>
+    // Function to open the popup
+    function openPopup() {
+        document.getElementById("video-popup").style.display = "block";
+        document.getElementById("video-frame").play();
+    }
+    
+    // Function to close the popup
+    function closePopup() {
+        document.getElementById("video-popup").style.display = "none";
+        document.getElementById("video-frame").pause();
+    }
+    
+    // Attach click event listener to the Kofi button
+    document.getElementById("kofi-button").addEventListener("click", function(event) {
+        event.preventDefault(); // Prevent the default action of following the link
+        openPopup(); // Open the popup
+    });
+    
+    // Update Kofi button position on scroll
+    window.addEventListener("scroll", function() {
+        var button = document.getElementById("kofi-button");
+        var rect = button.getBoundingClientRect();
+        var offset = window.pageYOffset || document.documentElement.scrollTop;
+        var bottomOffset = Math.max(20, 20 - (document.documentElement.scrollHeight - (offset + window.innerHeight)));
+        button.style.bottom = bottomOffset + "px";
+    });
+    </script>
   
+  <script>
+    console.log(`
+    █   █ ▄▀▄ █▄ ▄█ █▀▄    █   █ ▄▀▄ █▄ ▄█ █▀▄ 
+    ▀▄▀▄▀ ▀▄▀ █ ▀ █ █▀     ▀▄▀▄▀ ▀▄▀ █ ▀ █ █▀  `);
+      </script>
     <!--Navagation Page-->
     
     <nav class = 'nav' id = 'nav'>
