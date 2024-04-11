@@ -69,31 +69,7 @@
       </body>
 
 
-<script>
-    window.onscroll = function() {logoscale(), stickynav()};
-
- function logoscale() {
-   let womp = 100 - (document.scrollingElement.scrollTop/4);
-   let womp2 = 30 + (document.scrollingElement.scrollTop/10);
-  
-   console.log(document.scrollingElement.scrollTop);
-   document.getElementById("logo").style.scale = `${womp}%`;
-   if (document.scrollingElement.scrollTop < 900 && document.getElementById("hero").style.scale < 100) {
-     document.getElementById("hero").style.scale = `${womp2}%`;
-   }
-   else {
-     document.getElementById("hero").style.scale = "100%";
-   }
-  
-   
- /*if (document.scrollingElement.scrollTop < 100) {
-   document.getElementById("logo").style.scale = "100%";
- } else {
-   document.getElementById("logo").style.scale = `${womp}%`;
- }
-}
-*/
- }</script>
+      
  <script> 
  // When the user scrolls the page, execute myFunction
 // Get the navbar
