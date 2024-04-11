@@ -191,7 +191,7 @@
     let womp = 100 - (document.scrollingElement.scrollTop/4);
     let womp2 = 30 + (document.scrollingElement.scrollTop/10);
    
-    console.log(document.scrollingElement.scrollTop);
+    //console.log(document.scrollingElement.scrollTop);
     document.getElementById("logo").style.scale = `${womp}%`;
     if (document.scrollingElement.scrollTop < 900 && document.getElementById("hero").style.scale < 100) {
       document.getElementById("hero").style.scale = `${womp2}%`;
