@@ -199,7 +199,7 @@ background-repeat: no-repeat;
     padding: 20px;
     color: white;
     /*background: linear-gradient(178.1deg, rgb(0, 0, 0) 8.5%, rgb(70, 39, 153) 292.4%);*/
-    
+    /*https://codepen.io/P1N2O/pen/pyBNzX*/
       background: linear-gradient(-45deg, #000000, #160d2e, #160128, #090311);
       background-size: 1500% 1500%;
       animation: gradient 20s ease infinite;
